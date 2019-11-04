@@ -22,3 +22,14 @@ dex_import {
     owner: "xiaomi",
     jars: ["proprietary/framework/WfdCommon.jar"],
 }
+
+android_app_import {
+	name: "PowerOffAlarm",
+	owner: "xiaomi",
+	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
